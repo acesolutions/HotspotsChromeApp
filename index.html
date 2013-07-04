@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Hotspots</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"></link>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.min.css"></link>
+
+
+		<style type="text/css">
+        	body {
+          		padding-top: 90px;
+          		padding-bottom: 40px;
+        	}
+  		</style>
+
+	</head>
+	<body>
+
+		<div class="navbar navbar-fixed-top navbar-inverse">
+		  <div class="navbar-inner">
+		    <a class="brand" href="">Hotspots</a>
+		  </div>
+		</div>
+
+		<div class="container-fluid">
+			<div class="row-fluid">
+    			<div class="span3">
+      				<div class="well sidebar-nav">
+				        <ul class="nav nav-list">
+				            <li class="nav-header">So lets begin</li>
+				              <li><a href="">Find Event</a></li>
+				              <li><a href="">Plan</a></li>
+				            <li class="nav-header">Settings</li>
+				              <li><a href="">Options</a></li>
+				        </ul>
+				    </div><!--/.well -->
+    			</div>
+    			<div class="span8 well" >
+
+    				<div class="span5">
+    	   Start Date: <div id="startDate" class="input-append date">
+    						<input data-format="dd/MM/yyyy" type="text"></input>
+    						<span class="add-on">
+      							<i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
+    						</span>
+ 						</div>
+
+    				</div>
+    				<div class="span6">
+    		 End Date: <div id="endDate" class="input-append date">
+    				   		<input data-format="dd/MM/yyyy" type="text"></input>
+    						<span class="add-on">
+      							<i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
+    						</span>
+ 						</div>
+
+ 						<button class="btn" id="submit" style="margin-top:-10px;margin-left:10px;">Submit</button>
+
+    				</div>
+
+    				<div class="span6">
+    		Artist or Event: <input id="artistEvent" type="text"></input>
+    			   </div>
+    			</div>
+
+    			<div class="span8" >
+    				<h4>Places to go, people to see</h4>
+    				<div id="events"></div>
+    				<div id="places-map"></div>
+    			</div>
+  			</div>
+		</div>
+
+
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCMOgOcH33e5Qmqeo2bZrejzufXT3iQAU&sensor=true&libraries=places"></script>
+		<script src="js/purl.js"type="text/javascript"></script>
+	</body>
+</html>
